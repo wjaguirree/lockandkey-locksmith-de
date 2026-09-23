@@ -1,0 +1,8 @@
+{
+  "name": "lockandkey-locksmith-de",
+  "private": true,
+  "description": "Static site — local preview only, no build step",
+  "scripts": {
+    "start": "npx --yes http-server . -p 8090 -c-1"
+  }
+}

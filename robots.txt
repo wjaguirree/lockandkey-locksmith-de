@@ -1,0 +1,5 @@
+# lockandkeylocksmithde.com
+User-agent: *
+Allow: /
+
+Sitemap: https://lockandkeylocksmithde.com/sitemap.xml
