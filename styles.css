@@ -218,7 +218,7 @@ ul{margin:0;padding:0;list-style:none}
 .card:hover{transform:translateY(-4px);border-color:rgba(255,176,32,.45)}
 .card img{width:100%;aspect-ratio:4/3;object-fit:cover;opacity:.6;transition:opacity .25s}
 .card:hover img{opacity:.82}
-.card__b{padding:1.15rem 1.25rem 1.35rem}
+.card__b{display:block;padding:1.15rem 1.25rem 1.35rem}
 .card__b h3{font-size:1.1rem;margin-bottom:.4rem}
 .card__b p{color:var(--tx-3);font-size:.87rem;line-height:1.5}
 
