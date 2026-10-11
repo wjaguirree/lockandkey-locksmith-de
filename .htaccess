@@ -6,6 +6,10 @@ ErrorDocument 404 /404.html
   AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
 </IfModule>
 
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+</IfModule>
+
 <IfModule mod_expires.c>
   ExpiresActive On
   # HTML must never be cached hard: every deploy changes it.
@@ -14,6 +18,7 @@ ErrorDocument 404 /404.html
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
 </IfModule>
 
