@@ -105,3 +105,14 @@ ErrorDocument 404 /404.html
   Redirect 301 /service-areas/henlopen-acres/ /service-areas/henlopen-acres-de/
 </IfModule>
 # <<< redirects
+
+# >>> legacy redirects (hand-added, NOT generated; safe from gen/redirects.mjs)
+# Old-site URLs that Google still lists and that returned 404. Targets verified against the built site.
+<IfModule mod_alias.c>
+  Redirect 301 /contact/ /request/
+  RedirectMatch 301 ^/delaware/?$ /service-areas/
+  RedirectMatch 301 ^/delaware/(bethany-beach|bethel|blades|bowers-beach|bridgeville|camden|cheswold|clarksville|clayton|dagsboro|delmar|dewey-beach|dover|ellendale|farmington|felton|fenwick-island|frankford|frederica|georgetown|greenwood|harbeson|harrington|hartly|henlopen-acres|houston|kenton|laurel|leipsic|lewes|lincoln|little-creek|long-neck|magnolia|marydel|milford|millsboro|millville|milton|oak-orchard|ocean-view|rehoboth-beach|seaford|selbyville|slaughter-beach|smyrna|south-bethany|viola|woodside|wyoming)/?$ /service-areas/$1-de/
+  RedirectMatch 301 ^/delaware/(bethany-beach|bethel|blades|bowers-beach|bridgeville|camden|cheswold|clarksville|clayton|dagsboro|delmar|dewey-beach|dover|ellendale|farmington|felton|fenwick-island|frankford|frederica|georgetown|greenwood|harbeson|harrington|hartly|henlopen-acres|houston|kenton|laurel|leipsic|lewes|lincoln|little-creek|long-neck|magnolia|marydel|milford|millsboro|millville|milton|oak-orchard|ocean-view|rehoboth-beach|seaford|selbyville|slaughter-beach|smyrna|south-bethany|viola|woodside|wyoming)/(access-control|broken-key-extract|business-lockout|car-key-duplication|car-key-replacement|car-lockout|car-unlock-service|combination-lock-installation|commercial-hardware-installation|home-unlock-service|house-lockout|ignition-repair|key-fob-programming|keypad-entry-installation|lock-rekey|lock-repair|lock-replacements|lost-key-replacement|mailbox-key|master-key-system|panic-bar|safe-lock-service|smart-lock-installation|transponder-key-programming)/?$ /$2-in-$1-de/
+  RedirectMatch 301 ^/delaware/(bethany-beach|bethel|blades|bowers-beach|bridgeville|camden|cheswold|clarksville|clayton|dagsboro|delmar|dewey-beach|dover|ellendale|farmington|felton|fenwick-island|frankford|frederica|georgetown|greenwood|harbeson|harrington|hartly|henlopen-acres|houston|kenton|laurel|leipsic|lewes|lincoln|little-creek|long-neck|magnolia|marydel|milford|millsboro|millville|milton|oak-orchard|ocean-view|rehoboth-beach|seaford|selbyville|slaughter-beach|smyrna|south-bethany|viola|woodside|wyoming)/(emergency|commercial|residential|automotive)-locksmith/?$ /$2-locksmith-services-in-$1-de/
+</IfModule>
+# <<< legacy redirects
