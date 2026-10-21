@@ -8,6 +8,7 @@ ErrorDocument 404 /404.html
 
 <IfModule mod_mime.c>
   AddType image/avif .avif
+  AddType font/woff2 .woff2
 </IfModule>
 
 <IfModule mod_expires.c>
@@ -20,6 +21,7 @@ ErrorDocument 404 /404.html
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/avif "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
 <IfModule mod_headers.c>

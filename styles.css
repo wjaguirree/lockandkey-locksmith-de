@@ -11,6 +11,15 @@
    bar, hero that is really one big call button, an honest stat row, what we
    handle, numbered services, FAQ, footer. Every screen ends in the phone.
    ========================================================================== */
+/* Self-hosted fonts (latin + latin-ext). Fallback rules use local Arial and
+   Courier New, with size-adjust and overrides set to match Sora and JetBrains
+   Mono, so text swaps in without shifting the layout. */
+@font-face{font-family:"Sora";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/sora-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Sora";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/sora-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Sora Fallback";src:local("Arial");size-adjust:111.69%;ascent-override:86.84%;descent-override:25.96%;line-gap-override:0%}
+@font-face{font-family:"JetBrains Mono Fallback";src:local("Courier New");size-adjust:99.98%;ascent-override:102.02%;descent-override:30%;line-gap-override:0%}
 :root{
   /* ground — charcoal, from the logo's dark elements */
   --bg:#101216;
@@ -39,8 +48,8 @@
   --pad:clamp(18px,4vw,56px);
   --maxw:1240px;
 
-  --f:"Sora","Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --f-m:"JetBrains Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
+  --f:"Sora","Sora Fallback","Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-m:"JetBrains Mono","JetBrains Mono Fallback",ui-monospace,SFMono-Regular,Consolas,monospace;
 }
 
 *,*::before,*::after{box-sizing:border-box}
