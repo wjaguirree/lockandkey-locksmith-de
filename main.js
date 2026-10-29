@@ -12,12 +12,12 @@
   }
 
   /* ---------------- open / closed ----------------
-     Sun-Thu 7am-10pm · Fri 7am-6pm · Sat closed, Delaware time.
+     Sun-Thu 7am-10pm · Fri 7am-3:30pm · Sat closed, Delaware time.
      DUPLICATED from gen/data.mjs BRAND.hours on purpose (this file ships static);
      if the hours change there, change them here too — qa.mjs compares the two.
      Says only whether the phone is being answered now — never an arrival time. */
   safe("status", function () {
-    var HOURS = { 0: [420, 1320], 1: [420, 1320], 2: [420, 1320], 3: [420, 1320], 4: [420, 1320], 5: [420, 1080], 6: null };
+    var HOURS = { 0: [420, 1320], 1: [420, 1320], 2: [420, 1320], 3: [420, 1320], 4: [420, 1320], 5: [420, 930], 6: null };
     var DAYS = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
 
     var now;
