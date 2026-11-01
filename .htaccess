@@ -40,6 +40,15 @@ ErrorDocument 404 /404.html
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 </IfModule>
 
+# /404.html is the ErrorDocument. Requested directly it would answer 200 and be
+# a soft 404, so answer it with a real 404. REDIRECT_STATUS is empty on a direct
+# request and set when Apache serves it as the ErrorDocument, which stays intact.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{ENV:REDIRECT_STATUS} ^$
+  RewriteRule ^404\.html$ - [R=404,L]
+</IfModule>
+
 # Trailing slash on directory URLs, so /lock-rekey and /lock-rekey/ never split.
 <IfModule mod_rewrite.c>
   RewriteEngine On

@@ -1,0 +1,16 @@
+# Lock and Key Locksmith
+> Mobile locksmith based in Georgetown, Delaware, serving all 50 towns of Kent and Sussex County. Lockouts, rekeys, car keys and fobs, commercial locks. Phone (302) 271-0155.
+
+## Core pages
+- [Home](https://lockandkeylocksmithde.com/): Services, coverage map and how a call works
+- [About](https://lockandkeylocksmithde.com/about/): Who runs the business and how jobs are handled
+- [Services](https://lockandkeylocksmithde.com/services/): Every locksmith service offered
+- [Service areas](https://lockandkeylocksmithde.com/service-areas/): All towns served in Kent and Sussex County
+- [Blog](https://lockandkeylocksmithde.com/blog/): Locksmith guides for Delaware homes, cars and businesses
+- [FAQ](https://lockandkeylocksmithde.com/faq/): Answers to common locksmith questions
+- [Press](https://lockandkeylocksmithde.com/press/): Press coverage and mentions
+
+## Key facts
+- Service model: mobile van, no storefront; comes to the customer's address
+- Hours: Sun-Thu 7:00am-10:00pm, Fri 7:00am-3:30pm, Sat closed
+- Service area: Kent County and Sussex County, Delaware
