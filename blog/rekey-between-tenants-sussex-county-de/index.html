@@ -53,6 +53,9 @@
 .article .faq .a{padding:0 1.35rem 1.2rem;color:var(--tx-2);line-height:1.7}
 .article .faq .a p{margin-bottom:0}
 .byline{color:var(--tx-3);font-size:.9rem;margin-top:1.4rem}
+.article ol.checklist{list-style:none;margin:0 0 1.3rem;padding:0}
+.article ol.checklist li{position:relative;margin-bottom:.6rem;padding:.8rem 1rem .8rem 3rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-2)}
+.article ol.checklist li::before{content:"";position:absolute;left:1rem;top:1.05rem;width:1.05rem;height:1.05rem;border:2px solid var(--sig);border-radius:4px}
 </style>
 </head>
 <body>
@@ -182,7 +185,7 @@
 <p>None of this is legal advice. Your lease and your attorney have the final say.</p>
 <h2 id="a-turnover-checklist">A turnover checklist</h2>
 <p>Work through it in this order and the turnover stays quick.</p>
-<ol>
+<ol class="checklist" role="list">
 <li>Collect every key from the outgoing tenant and count them.</li>
 <li>Walk each door and note any lock that isn't yours.</li>
 <li>Try each lock. Does the key turn without a fight, and does the bolt go all the way out?</li>
